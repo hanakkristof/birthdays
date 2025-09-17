@@ -5,18 +5,23 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import {persons} from "../data.js"
+import PersList from './components/PersList.jsx';
+import Counter from './components/Counter.jsx';
+
 
 
 export const App =() => {
   const [pers, setPers] = useState(persons)
-
+  
+// 
   return (
     
-      <div className='d-flex justify-content-center align-items-center flex-column'>
+      <div className='body d-flex justify-content-start align-items-center flex-column'>
         
         <Header/>
         <Counter count={pers.length}/>
         {pers.length!=0&& <PersList pers={pers} setPers = {setPers}/>}
+       
       </div>
   )
 }

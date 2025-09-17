@@ -1,0 +1,9 @@
+.body{
+    background-color: rosybrown;
+    min-height: 100vh;
+}
+body{
+    background-color: rosybrown;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
